@@ -1,16 +1,38 @@
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://line.me/ti/p/DXrTY_QtDk">
-    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINEを追加</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .btn {
+            background-color: #06C755; /* LINEの緑色 */
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
     <script>
-        // JavaScriptによるバックアップのリダイレクト処理
-        window.location.href = "https://line.me/ti/p/DXrTY_QtDk";
+        // アクセスと同時にアプリ起動を試みる
+        window.onload = function() {
+            window.location.replace("https://line.me/ti/p/DXrTY_QtDk");
+        };
     </script>
 </head>
 <body>
-    <p>LINEへ移動しています...</p>
-    <p>自動的に切り替わらない場合は、<a href="https://line.me/ti/p/DXrTY_QtDk">こちらをクリック</a>してください。</p>
+    <a href="https://line.me/ti/p/DXrTY_QtDk" class="btn">LINEを開く</a>
 </body>
 </html>
